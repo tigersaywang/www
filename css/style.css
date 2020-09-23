@@ -94,6 +94,7 @@ hr{
 
 @media(max-width:200px){
     hr{display:none;}
+    body{background-color: red;}
 }
 
 
