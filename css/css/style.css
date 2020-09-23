@@ -153,10 +153,3 @@ hr{
         display: none;
     }
 }
-
-
-@media(max-width:1900px){
-    body{background-color: yellow;}
-}
-
-
