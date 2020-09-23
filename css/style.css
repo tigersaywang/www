@@ -93,13 +93,70 @@ hr{
 
 
 @media(max-width:1460px){
-    hr{display:none;}
-    body{background-color: red;}
+    #wrap
+    {
+    display: block;
+    width: 359px;
+    padding: 0;
+    }
+    
+    hr{
+        float: right;
+        width: 340px;
+        position: relative;
+        margin: 0;
+        padding: 0 0 0 30px;
+    }
+    
+    .left{
+        width: 359px;
+    }
+    
+    .para{width: 359px;}
+    
+    
+    .title{
+        float: right;
+        text-align: right;
+        font-size: 30px;
+        margin: 30px 0 30px 0;
+        font-weight: bold;
+    }
+    
+    
+    .hello{
+        text-align: center;
+        width: 359px;
+        font-size: 72px;
+        margin: 30px 0;
+        padding: 0;
+    }
+    
+    .span{
+        font-size: 20px;
+        width: 359px;
+        margin: 0x;
+        word-break:keep-all;
+        text-align: center;
+        line-height: 32px;
+    }
+    
+    .text{
+        text-align: left;
+        padding:0px;
+        margin: 50px 0;
+        width: 320px;
+/*        float: left;*/
+    }
+    
+    .midea{
+        display: none;
+    }
 }
+
 
 @media(max-width:1900px){
     body{background-color: yellow;}
 }
-
 
 
