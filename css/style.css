@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+
+body{
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: "맑은고딕";
+    font-size: 12px;
+}
+
+#wrap{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    width: 1200px;
+}
+
+.span{
+    float: left;
+    display: block;
+    text-align: left;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 60px; 
+    width: 620px;
+    margin: 0;
+/*    border: 1px solid black;*/
+    word-break: break-all;
+    padding: 0;
+}
+
+.left{
+    float: left;
+/*    border: 1px solid black;*/
+    width: 620px;
+    margin: 0;
+    padding: 0;
+}
+
+.hello{
+    float: left;
+    padding: 90px 50px 50px 0;
+    margin: 0; 
+    font-size: 100px;
+    text-align: left;
+    font-weight: bold;
+    width: 620px;
+/*    border: 1px solid black;*/
+}
+
+
+.para{
+    margin: 0 auto;
+    padding: 0;
+/*    border: 1px solid black;*/
+    width: 1200px;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 80px;
+    margin: 90px 50px;
+/*    border: 1px solid black;*/
+    padding: 0;
+}
+
+.text{
+    position: relative;
+    float: right;
+/*    border: 1px solid black;*/
+    width: 570px;
+    text-align: left;
+    padding: 0 0 0 30px;
+    margin: 90px 0 0 0;
+}
+
+hr{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border:2px solid #777;
+}
+
+
+@media(max-width:500px){
+    #wrap
+    {
+    display: block;
+    width: 359px;
+    padding: 0;
+    }
+    
+    hr{
+        float: right;
+        width: 340px;
+        position: relative;
+        margin: 0;
+        padding: 0 0 0 30px;
+    }
+    
+    .left{
+        width: 359px;
+    }
+    
+    .para{width: 359px;}
+    
+    
+    .title{
+        float: right;
+        text-align: right;
+        font-size: 30px;
+        margin: 30px 0 30px 0;
+        font-weight: bold;
+    }
+    
+    
+    .hello{
+        text-align: center;
+        width: 359px;
+        font-size: 72px;
+        margin: 30px 0;
+        padding: 0;
+    }
+    
+    .span{
+        font-size: 20px;
+        width: 359px;
+        margin: 0x;
+        word-break:keep-all;
+        text-align: center;
+        line-height: 32px;
+    }
+    
+    .text{
+        text-align: left;
+        padding:0px;
+        margin: 50px 0;
+        width: 320px;
+/*        float: left;*/
+    }
+    
+    .midea{
+        display: none;
+    }
+}
+
+
+
