@@ -92,7 +92,7 @@ hr{
 }
 
 
-@media(screen.width:400px){
+@media(max-width:400px){
     #wrap
     {
     display: block;
