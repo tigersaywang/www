@@ -1,34 +1,22 @@
 <!DOCTYPE html>
-<!--html:5+tab-->
-<html lang="ko">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>미디어쿼리 사용하기</title>
-    <link href="css/style.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=hbo8am9byi"></script>
 </head>
 <body>
-  <div id="wrap">
-      <div class="imgs"><img src="4_12_mobile.png" alt="맥도날드 모바일"></div>
-   
-<!--     <section class="title">
-        Let's Study Media Qurey!
-    </section>
-    
-      <hr>
-   
-    <section class="para">
-       <div class="left">
-       
-        <h1 class="hello">Hello :)<br> I'm DONA!
-        </h1>
-        
-      <span class="span">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-        
-        </div>
+<div id="map" style="width:100%;height:400px;"></div>
 
-        
-        <div class="text">Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! <br><br>Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! <br><br>Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="midea">Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. <br><br>Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br>Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br>Vitae doloribus, earum, inventore alias quisquam vel numquam temporibus dolor, iure repellendus dolore labore et! Doloribus incidunt nisi minima officia quia? Porro.</span></div>
-    </section> -->
-    </div>
+<script>
+const mapOptions = {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+};
+
+const map = new naver.maps.Map('map', mapOptions);
+</script>
 </body>
 </html>
