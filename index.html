@@ -17,6 +17,11 @@ const mapOptions = {
 };
 
 const map = new naver.maps.Map('map', mapOptions);
+    
+const marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.517480950040834, 127.04060667518374),
+        map: map
+    });
 </script>
 </body>
 </html>
